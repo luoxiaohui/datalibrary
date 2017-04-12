@@ -1,0 +1,26 @@
+<resources>
+
+
+    <style name="SwipeBackLayout">
+        <item name="edge_size">50dip</item>
+        <item name="shadow_left">@drawable/shadow_left</item>
+        <item name="shadow_right">@drawable/shadow_right</item>
+        <item name="shadow_bottom">@drawable/shadow_bottom</item>
+    </style>
+
+    <style name="MyTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowBackground">@color/bg_color_gray</item>
+        <item name="android:colorBackgroundCacheHint">@null</item>
+        <item name="android:textColor">@color/txt_color_black</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowAnimationStyle">@style/Animation</item>
+    </style>
+
+    <style name="Animation">
+        <item name="android:activityOpenEnterAnimation">@anim/in_from_right</item>
+        <item name="android:activityCloseExitAnimation">@anim/out_to_right</item>
+        <item name="android:activityOpenExitAnimation">@anim/alpha_action</item>
+        <item name="android:activityCloseEnterAnimation">@anim/out_to_right</item>
+    </style>
+
+</resources>
